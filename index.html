@@ -13,8 +13,8 @@
 <section class="header">
     <nav>
         <a href="index.html"><img src="images/logo.png"></a>
-        <div class="nav-links">
-            <i class="fa fa-times"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
              <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li> 
@@ -23,7 +23,7 @@
                 <li><a href="">CONTACT</a></li>
             </ul>
         </div>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 <div class="text-box">
     <h1> World's Biggest University</h1>
@@ -33,7 +33,154 @@
  
 </section>
 
+<!----course--->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Crime, Law and Justice Studies, Biotechnology, Computer Science, Economics, Chemical Engineering, Civil Engineering</p>
 
+ 
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Full-time students enroll in a full course load (36 or more units) for the semester and study for one or
+            more semesters. They may be from the United States or from abroad. Students from more than 35 different countries
+            have participated in the Advanced Study Program in recent years and are eligible for visa sponsorship.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Students experience the entire research process from initial project framing and literature review, through
+            experimental design to documentation of their work in a final research thesis and oral presentation. Support is
+            provided throughout the course through lectures and workshops on topics like proposal writing and research 
+            documentation.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Faculty research areas include aircraft flight systems and control, flight simulation, computational fluid dynamics,
+            combustion and propulsion, aerodynamic shape optimization, experimental fluid dynamics, flow control, structural mechanics,
+            advanced composite materials, multidisciplinary optimization of aircraft, multifunctional systems, spacecraft dynamics and 
+            control, autonomous space robotics, microsatellites, space mechatronics, plasma-materials interactions, and materials for 
+            fusion reactors.</p>
+        </div>
+    </div>
+
+
+
+</section>
+
+<!--------------campus------------------>
+
+
+
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Global Campus is an online university that provides a learning platform that is completely online to all its students.</p>
+ 
+    <div class="row">
+        <div class="campus-col">
+           <img src="images/london.png">
+           <div class="layer">
+                 <h3>LONDON</h3>                
+           </div>
+        </div>   
+    
+    
+      <div class="campus-col">
+           <img src="images/newyork.png">
+           <div class="layer">
+                 <h3>NEW YORK</h3>                
+           </div>
+        </div>   
+    
+    <div class="campus-col">
+           <img src="images/washington.png">
+           <div class="layer">
+                 <h3>WASHINGTON</h3>                
+           </div>
+        </div>   
+    </div>
+
+
+</section>
+
+<!-- ---- Facilities ----------->
+
+<section class="facilities">
+     <h1>Our Facilities</h1>
+     <p>The mission of Facilities Management at the University
+     is to effectively and efficiently provide maintenance,
+     operational services and utilities services that support 
+     the faculty, staff and students in pursuit of excellence
+     in their individual and institutional academic research 
+     and community objectives.These services are directed toward
+     the pursuit of sustainability in the maintenance and operation
+     of all facilities.Facilities Management's vision is 
+     to achieve customer satisfaction and employee excellence.
+    We value accountability, communication, sustainability, 
+     cooperation, education, fairness and trust.</p>
+
+ <div class="row">
+    <div class="facilities-col">
+      <img src="images/library.png">
+        <h3>World Class Library</h3>
+        <p>Facilitate Information Access. Enable discovery
+        and usage of information resources of any format or
+        ownership;provide for preservation of general collections.
+        Foster Scholarship and Creation. Deliver expertise,
+        assistance, tools, and services that support research
+        and creative work.</p>
+    </div>
+
+   <div class="facilities-col">
+    <img src="images/basketball.png">
+      <h3>Largest Play Ground</h3>
+      <p>During childhood and adolescence, 
+      regular physical activity is associated
+      with improvements in both physiological
+      and psychological health. Therefore, the
+      promotion of regular physical activity in
+      youth has become a public health priority.
+      This University is not only concerned about
+      making competent graduates but also concerned
+      about making healthy (both psychologically 
+      and physically) future citizens.</p>
+   </div>
+
+
+   <div class="facilities-col">
+    <img src="images/cafeteria.png">
+      <h3>Tasty and Healthy Food</h3>
+      <p>This University is well concerned about the healthy food habit of students. The main cafeteria of the university
+      is a spacious and radiant area. It offers quality meals and services at a reasonable cost to students, faculty, staff, and
+      guests with the assurance that you’ll always have a wide variety of healthy, good-tasting options made with care. It 
+      maintains cleanliness and food hygiene. There are a total of three Cafeterias at Metropolitan University.</p>
+   </div>
+ 
+ </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--------------Javascript for Toggle Menu ------>
+<script>
+
+       var navLinks = document.getElementById("navLinks")
+       function showMenu(){
+            navLinks.style.right = "0";
+       }
+       function hideMenu(){
+        navLinks.style.right = "-200px";
+   }
+
+
+</script>
 
 </body>
 </html>
